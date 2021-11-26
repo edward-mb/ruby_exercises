@@ -45,6 +45,7 @@ RSpec.describe "Predicate Enumerable Exercises" do
     end
   end
 
+<<<<<<< HEAD
   describe "recent years exercise" do
     it "returns true when all of the years are between 2011 and 2021" do
       year_list = [2011, 2021, 2016]
@@ -59,6 +60,23 @@ RSpec.describe "Predicate Enumerable Exercises" do
     it "returns true when the list is empty" do
       word_list = []
       expect(recent_years?(word_list)).to be true
+=======
+  describe 'twenty-first century years exercise' do
+
+    xit 'returns true when all of the years are between 2001 and 2100' do
+      year_list = [2001, 2002, 2099, 2100]
+      expect(twenty_first_century_years?(year_list)).to be true
+    end
+
+    xit 'returns false when some of the years are not between 2001 and 2100' do
+      year_list = [2000, 2042, 2084, 2101]
+      expect(twenty_first_century_years?(year_list)).to be false
+    end
+
+    xit 'returns true when the list is empty' do
+      year_list = []
+      expect(twenty_first_century_years?(year_list)).to be true
+>>>>>>> 8183e501941e6daf813ebc0300cd8bfd38fc58aa
     end
   end
 
