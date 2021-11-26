@@ -9,14 +9,14 @@ def correct_guess?(guess_list, answer)
   guess_list.any? { |item| answer == item }
 end
 
-<<<<<<< HEAD
 def recent_years?(year_list)
   # use #all? to return true when all of the years in the year_list (array) are between 2011 and 2021
   year_list.all?(2011..2021)
-=======
+end
+
 def twenty_first_century_years?(year_list)
   # use #all? to return true when all of the years in the year_list (array) are between 2001 and 2100
->>>>>>> 8183e501941e6daf813ebc0300cd8bfd38fc58aa
+  year_list.all?(2001..2100)
 end
 
 def correct_format?(word_list)
