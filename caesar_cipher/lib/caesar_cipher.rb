@@ -1,9 +1,7 @@
 # The action of a Caesar cipher is to replace each plaintext letter with a different one a fixed number of places down the alphabet.
 module CaesarCipher
-  # a(97) — z (122)
-  # A(65) — Z (90)
   class << self
-    # Encrypt a message using the Caesar Cipher algorithm with a specified shift
+    # Encrypt a message using a Caesar cipher with the specified shift
     def encipher(message, shift = 5)
       encrypted_message = ""
       message.each_char do |char|
@@ -26,9 +24,12 @@ module CaesarCipher
     end
 
     # is the ordinal number an alphabet letter?
-    # a — z (97- 122) or A — Z (65 - 90)
+    # a(97) — z (122)
+    # A(65) — Z (90)
     def alphabet_letter?(ordinal_number)
       ordinal_number.between?(97, 122) || ordinal_number.between?(65, 90)
     end
   end
 end
+
+CaesarCipher.encipher
