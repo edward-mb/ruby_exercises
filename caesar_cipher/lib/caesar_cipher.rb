@@ -20,6 +20,7 @@ module CaesarCipher
     def encipher_ordinal(number, shift)
       alphabet_base = number <= 90 ? 65 : 97 # If number is <= 90 then its base is uppercase else is lowercase
 
+      # If the ordinal numbers correspond to an alphabet letter, encipher it and return it, else return the number
       alphabet_letter?(number) ? (number + shift - alphabet_base) % 26 + alphabet_base : number
     end
 
