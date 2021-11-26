@@ -17,11 +17,11 @@ RSpec.describe "CaesarCipher" do
       expect(cipher.encipher("What a string!", -21)).to eql("Bmfy f xywnsl!")
     end
 
-    it "wotks with wikepedia example with a shift of 23" do
+    it "works with wikepedia example with a shift of 23" do
       expect(cipher.encipher("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", 23)).to eql("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD")
     end
 
-    it "wotks with wikepedia example with a shift of -3" do
+    it "works with wikepedia example with a shift of -3" do
       expect(cipher.encipher("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", -3)).to eql("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD")
     end
 
