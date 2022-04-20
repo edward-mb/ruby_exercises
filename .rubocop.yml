@@ -1,17 +1,19 @@
-# inherit_mode:
-#   merge:
-#     - Exclude
+inherit_mode:
+  merge:
+    - Exclude
 
-# inherit_gem:
-#   standard: config/base.yml
+require:
+  - rubocop-performance
+  - standard
 
-# require:
-#   - rubocop-performance
-#   - standard/cop/block_single_line_braces
-#   # - rubocop-rails
-#   - rubocop-rspec
-#   # - rubocop-minitest
-#   # - rubocop-rake
+inherit_gem:
+  standard: config/base.yml
+
+inherit_from:
+  # - .rubocop_rails.yml
+  - .rubocop_rspec.yml
+  # - .rubocop_custom.yml
+  # - .rubocop_strict.yml
 
 # Lint/DuplicateMethods:
 #   Enabled: false
@@ -19,20 +21,20 @@
 # AllCops:
 #   NewCops: enable
     
-require: 
-  - standard
+# require: 
+#   - standard
 
-inherit_gem:
-  standard: config/base.yml
+# inherit_gem:
+#   standard: config/base.yml
 
-AllCops:
-  Exclude:
-    - "vendor/**/*"
-    - "tmp/**/*"
-    - "bin/**/*"
-    - "db/**/*"
-    - "node_modules/**/*"
-    - "storage/**/*"
+# AllCops:
+#   Exclude:
+#     - "vendor/**/*"
+#     - "tmp/**/*"
+#     - "bin/**/*"
+#     - "db/**/*"
+#     - "node_modules/**/*"
+#     - "storage/**/*"
 
 # Minitest:
 #   Enabled: true

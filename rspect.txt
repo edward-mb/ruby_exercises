@@ -1,5 +1,7 @@
 example_id                                      | status | run_time        |
 ----------------------------------------------- | ------ | --------------- |
+./bubble_sort/spec/bubble_spec.rb[1:1:1]        | passed | 0.00023 seconds |
+./bubble_sort/spec/bubble_spec.rb[1:1:2]        | passed | 0.00004 seconds |
 ./caesar_cipher/spec/caesar_spec.rb[1:1:1]      | passed | 0.00023 seconds |
 ./caesar_cipher/spec/caesar_spec.rb[1:1:2]      | passed | 0.00004 seconds |
 ./caesar_cipher/spec/caesar_spec.rb[1:1:3]      | passed | 0.00003 seconds |
