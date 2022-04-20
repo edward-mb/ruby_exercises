@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "../spec/spec_helper"
 require_relative "../lib/caesar_cipher"
 
 RSpec.describe "CaesarCipher" do

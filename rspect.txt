@@ -1,0 +1,9 @@
+example_id                                      | status | run_time        |
+----------------------------------------------- | ------ | --------------- |
+./caesar_cipher/spec/caesar_spec.rb[1:1:1]      | passed | 0.00023 seconds |
+./caesar_cipher/spec/caesar_spec.rb[1:1:2]      | passed | 0.00004 seconds |
+./caesar_cipher/spec/caesar_spec.rb[1:1:3]      | passed | 0.00003 seconds |
+./caesar_cipher/spec/caesar_spec.rb[1:1:4]      | passed | 0.00005 seconds |
+./caesar_cipher/spec/caesar_spec.rb[1:1:5]      | passed | 0.00004 seconds |
+./caesar_cipher/spec/caesar_spec.rb[1:1:6]      | passed | 0.00003 seconds |
+./stock_picker/spec/stock_picker_spec.rb[1:1:1] | passed | 0.00018 seconds |
