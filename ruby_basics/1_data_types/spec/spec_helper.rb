@@ -1,5 +1,5 @@
 RSpec.configure do |config|
-  config.example_status_persistence_file_path = 'rspect.txt'
+  config.example_status_persistence_file_path = "rspect.txt"
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
@@ -12,7 +12,8 @@ RSpec.configure do |config|
 end
 
 module FormatterOverrides
-  def dump_pending(_); end
+  def dump_pending(_)
+  end
 end
 
 RSpec::Core::Formatters::DocumentationFormatter.prepend FormatterOverrides
